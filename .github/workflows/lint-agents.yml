@@ -19,7 +19,7 @@ on:
 jobs:
   lint:
     name: Validate agent frontmatter and structure
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, homelab, linux, x64]
     steps:
       - uses: actions/checkout@v4
         with:
